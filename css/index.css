@@ -1,0 +1,330 @@
+/*
+* @Author: Administrator
+* @Date:   2015-12-16 10:28:01
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-12-19 13:40:08
+**/
+body{
+  background-color: #ccc;
+  height: 2000px;
+}
+.jd-layout {
+  min-width: 300px;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.jd-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 999;
+}
+
+.jd-header .jd-header-box {
+  min-width: 300px;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  /*background: rgba(201, 21, 35, 0.85);*/
+  height: 40px;
+}
+
+.jd-header .jd-header-box .icon-logo {
+  background-position:0 -103px;
+    width: 60px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+
+.jd-header .jd-header-box form {
+  width: 100%;
+  height: 40px;
+  padding-left: 75px;
+  padding-right: 55px;
+}
+
+.jd-header .jd-header-box form .icon-search {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: -60px -109px;
+  position: absolute;
+  top: 10px;
+  left: 85px;
+  cursor: pointer;
+}
+
+.jd-header .jd-header-box form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 5px;
+  padding-left: 30px;
+}
+
+.jd-header .jd-header-box .login {
+  display: block;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+
+/*轮播图*/
+
+.jd-banner {
+  overflow: hidden;
+  position: relative;
+}
+
+.jd-banner ul:first-child {
+  width: 1000%;
+  transform:translate(-10%);
+  -webkit-transform:translate(-10%);
+}
+
+.jd-banner ul:first-child li {
+  width: 10%;
+  float: left;
+}
+
+.jd-banner ul:first-child li img {
+  width: 100%;
+  display: block;
+}
+
+.jd-banner ul:last-child {
+  width: 118px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  margin-left: -59px;
+  bottom: 10px;
+}
+
+.jd-banner ul:last-child li {
+  width: 6px;
+  height: 6px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  float: left;
+}
+
+.jd-banner ul:last-child li.now {
+  background-color: #fff;
+}
+
+.jd-banner ul:last-child li+li {
+  margin-left: 10px;
+}
+/*导航条*/
+.jd-nav{
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  padding-top: 11px;
+}
+.jd-nav ul{
+  width: 100%;
+}
+.jd-nav ul li{
+  width: 25%;
+  height: 69px;
+  float: left;
+}
+.jd-nav ul li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.jd-nav ul li a img{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+.jd-nav ul li a p{
+  font-size: 12px;
+   color: #888;
+   margin-top: 6px;
+}
+/*商品区域*/
+.jd_product{
+    margin: 0 5px;
+}
+.jd-product .jd-product-box {
+  box-shadow: 0 1px 1px #e0e0e0;
+  background-color: #fff;
+  margin-top: 8px;
+}
+.jd-product .jd-product-box .product-top{
+  height: 32px;
+
+  border:1px solid #e0e0e0;
+   position: relative;
+}
+.jd-product .jd-product-box .product-top h3{
+  padding-left: 15px;
+  font-weight: inherit;
+  font-size: 15px;
+  line-height: 32px;
+  color: #666;
+}
+.jd-product .jd-product-box .product-top::before{
+   content: "";
+  width: 3px;
+  height: 12px;
+  background-color: #d8505c;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+.jd-product .jd-product-box .product-top.no-bor{
+  border-bottom: none;
+}
+.jd-product .jd-product-box .product-bot{
+
+}
+/*秒杀*/
+.jd-product .jd-secondKill .product-top .jd-secondKill-left{
+  float: left;
+}
+.jd-product .jd-secondKill .product-top::before{
+  content: "";
+  width: 16px;
+  height: 20px;
+  background: url(../images/seckill-icon.png) no-repeat;
+    background-size: 16px 20px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 8px;
+}
+.jd-product .jd-secondKill .product-top .jd-secondKill-left h4{
+padding-left: 30px;
+font-size: 14px;
+color: #d8505c;
+line-height: 32px;
+float: left;
+}
+.jd-product .jd-secondKill .product-top .jd-secondKill-left .sk-time{
+  float: left;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+.jd-product .jd-secondKill .product-top .jd-secondKill-left .sk-time span{
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 15px;
+  margin-right: 3px;
+}
+.jd-product .jd-secondKill .product-top .jd-secondKill-left .sk-time span:nth-child(3n){
+    width: 6px;
+    background-color: #fff;
+    color: #000;
+}
+.jd-product .jd-secondKill .product-top .jd-secondKill-right{
+  float: right;
+  margin-right: 5px;
+}
+.jd-product .jd-secondKill .product-top .jd-secondKill-right a{
+  font-size: 15px;
+  line-height: 32px;
+}
+/*秒杀商品*/
+.jd-product .jd-product-box{
+width: 100%;
+}
+.jd-secondKill .product-bot{
+width: 100%;
+}
+.jd-secondKill .product-bot ul{
+  width: 100%;
+  padding: 10px 0;
+}
+.jd-secondKill .product-bot ul li{
+  width: 33.333%;
+  float: left;
+}
+.jd-secondKill .product-bot ul li a{
+width: 100%;
+}
+.jd-secondKill .product-bot ul li a .img-box{
+  width: 100%;
+  border-right: 1px solid #c0c0c0;
+}
+.jd-secondKill .product-bot ul li:last-child a .img-box{
+border-right: none;
+}
+.jd-secondKill .product-bot ul li a .img-box img{
+  width: 64%;
+  display: block;
+  margin: 0 auto;
+}
+.jd-secondKill .product-bot ul li a .new-price{
+    color: #d8505c;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 3px;
+}
+.jd-secondKill .product-bot ul li a .old-price{
+    font-size: 12px;
+    text-decoration: line-through;/*删除线*/
+    margin-top: 3px;
+    text-align: center;
+    color: #888;
+}
+/*超值购*/
+.jd-pd .product-bot .pic{
+  width:  50%;
+}
+.jd-pd .product-bot .pic a{
+display:  block;
+width:  100%;
+}
+.jd-pd .product-bot .pic a img{
+  display:  block;
+  width:  100%;
+}
+.jd-pd .product-bot .f-left{
+  float: left;
+}
+.jd-pd .product-bot .f-right{
+  float: right;
+}
+.jd-pd .product-bot .b-right{
+  border-right: 1px solid #c0c0c0;
+}
+.jd-pd .product-bot .b-bottom{
+  border-bottom: 1px solid #c0c0c0;
+}
+.jd-pd .product-bot .b-left{
+  border-left: 1px solid #c0c0c0;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+/*
+* @Author: Administrator
+* @Date:   2015-12-16 10:11:15
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-12-18 12:35:48
+*/
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+body{
+  font-size: 14px;
+  font-family: "microsoft yahei",sans-serif;
+  color: #000;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+ul{
+  list-style:none;
+}
+input,textarea{
+  border:none;
+  resize:none;
+  outline:none;
+  -webkit-appearance:none;/* 清除浏览器默认样式*/
+}
+
+
+/*清除浮动*/
+
+.clearfix::before,
+.clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+[class^="icon-"]{
+  background: url(../images/sprites.png) no-repeat;
+  background-size: 200px 200px;
+}
+
+.jd-topBar {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #e0e0e0;
+  background: url(../images/header-bg.png) repeat;
+  -webkit-background-size: 1px 44px;
+  background-size: 1px 44px;
+  position: absolute;
+  z-index: 1000;
+}
+
+.jd-topBar .icon-back {
+  background-position: -20px 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin: 12px 10px;
+  top: 0;
+  left: 0;
+}
+
+.jd-topBar h2{
+  text-align: center;
+  font-size: 16px;
+  font-weight: inherit;
+  line-height: 44px;
+  font-family: sans-serif;
+}
+.jd-topBar form {
+  width: 100%;
+  height: 44px;
+  padding: 0 40px;
+}
+
+.jd-topBar form input {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+.jd-topBar .icon-menu {
+  background-position: -60px 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  padding: 12px 10px;
+  background-clip: content-box;
+  background-origin: content-box;
+  top: 0;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+/*
+* @Author: Administrator
+* @Date:   2015-12-18 09:39:47
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-12-18 12:36:50
+*/
+
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.jd-category {
+  width: 100%;
+  height: 100%;
+  padding-top: 45px;
+}
+
+.jd-category .jd-category-left {
+  width: 90px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 45px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.jd-category-left .jd-category-left-box {
+  width: 100%;
+}
+
+.jd-category-left .jd-category-left-box ul {}
+
+.jd-category-left .jd-category-left-box ul li {
+  width: 100%;
+  height: 50px;
+  background-color: #f3f4f6;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.jd-category-left .jd-category-left-box ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.jd-category-left .jd-category-left-box ul li.now  {
+  background-color: transparent;
+  border-right: none;
+
+}
+.jd-category-left .jd-category-left-box ul li.now a{
+    color: #d8505c;
+}
+.jd-category .jd-category-right {
+  width: 100%;
+  height: 100%;
+  padding-left: 90px;
+  overflow: hidden;
+}
+
+.jd-category-right .jd-category-right-box {
+  width: 100%;
+  padding: 10px 12px;
+}
+
+.jd-category-right .jd-category-right-box .r-banner {
+  width: 100%;
+}
+
+.jd-category-right .jd-category-right-box .r-banner img {
+  width: 100%;
+}
+
+.jd-category-right .jd-category-right-box .r-product {
+  width: 100%;
+  font-size: 12px;
+}
+
+.jd-category-right .jd-category-right-box .r-product h3 {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.jd-category-right .jd-category-right-box .r-product li {
+  width: 33.333%;
+  float: left;
+  text-align: center;
+}
+
+.jd-category-right .jd-category-right-box .r-product li img {
+  width: 62px;
+  height: 62px;
+  display: block;
+  margin: 0 auto;
+}
+
+.jd-category-right .jd-category-right-box .r-product li p {
+  line-height: 30px;
+  color: #888;
+}
